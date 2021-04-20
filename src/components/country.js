@@ -15,7 +15,7 @@ class Country extends Component{
         
         return(
             <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-            <Link to={`/info/${nameFiltered}`} className="card pointer light-element light-text dark-element dark-text shadow-sm">
+            <Link to={`info/${nameFiltered}`} className="card pointer light-element light-text dark-element dark-text shadow-sm">
                 <img src={flag} alt="flag" className="card-img-top" />
                 <div className="card-body">
                     <h5 className="card-title">{name}</h5>

@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import {HashRouter as Router, Route, Switch} from 'react-router-dom'
 import './App.css';
 import Countries from './components/countries';
 import CountryInfo from './components/countryInfo';
@@ -98,7 +98,7 @@ class App extends Component {
            
             <div className="container">
               <Switch>
-                  <Route path="/" exact>
+                  <Route path='/' exact>
                   
                         <div className="justify-content-center align-items-center mx-5 mt-5">
                           <Searcher
