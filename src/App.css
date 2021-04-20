@@ -1,38 +1,119 @@
-.App {
-  text-align: center;
+
+
+:root{
+
+
+  /** Colors **/
+
+  /* Neutral */
+
+  --element-dark-blue: hsl(209, 23%, 22%);
+  --bg-very-dark-blue: hsl(207, 26%, 17%);
+  --text-very-dark-blue: hsl(200, 15%, 8%);
+  --input-dark-gray: hsl(0, 0%, 52%);
+  --bg-very-light-gray: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%); 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/** Some styles **/
+
+*{
+
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  padding: 0;
+  margin: 0;
+}
+.header-title{
+
+  font-size: 120%;
+  font-weight: bolder;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar{
+  position: relative;
+  width: 100%;
+  border: 2px solid blue;
 }
 
-.App-link {
-  color: #61dafb;
+.pointer{
+  cursor: pointer;
+  transition: .2s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pointer:hover{
+  border: 2px solid blue;
 }
+
+.borderCountries{
+  position: relative;
+  padding: 0 1rem;
+  
+}
+.borderCountries span{
+  margin: 0 1rem;
+  padding: .2rem 1rem;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 2px;
+}
+
+.borderImg{
+  border: 1px solid rgba(0,0,0,0.2);
+}
+
+.btnBack{
+  padding: .2rem 1rem;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 2px;
+  transition: .2s;
+}
+
+.btnBack i{
+  margin-right: .5rem;
+}
+
+.btnBack:hover{
+  background: gray;
+}
+
+/** Light mode**/
+
+.light{
+  background: var(--bg-very-light-gray);
+}
+
+.light .light-text{
+  color: var(--text-very-dark-blue);
+}
+
+.light ::placeholder{
+  color: var(--text-very-dark-blue);
+}
+
+.light .light-element{
+  background: var(--white);
+  border-color: var(--white);
+}
+
+/** Dark mode**/
+
+.dark{
+  background: var(--bg-very-dark-blue);
+}
+
+.dark .dark-element{
+  background: var(--element-dark-blue);
+  border-color: var(--element-dark-blue);
+}
+
+.dark .dark-text{
+  color: var(--white);
+}
+
+.dark ::placeholder{
+  color: var(--white);
+}
+
